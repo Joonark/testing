@@ -1,0 +1,13 @@
+name: My first workflow # the name of the workflow
+on: [push] # event that triggers this workflow
+
+jobs: # the jobs that run in this workflow
+  run_command: # the name of the job
+    runs-on: ubuntu-latest # the type of machine to run the job on
+    steps: # the individual
+      - name: run echo command # the name of the step
+        run: echo "hello world" # the command to run in this step
+      - name: run multiple commands # the name of the step
+          echo "Hello World" # the first command that prints "hello world"
+          echo "This is Deepak" # the second command that prints "this is Deepak"
+
